@@ -9,7 +9,8 @@ RUN apk add --no-cache \
       curl \
       wget \
       git \
-      gettext
+      gettext \
+      bash
 
 RUN wget -q https://github.com/instrumenta/kubeval/releases/download/${KUBEVAL_VERSION}/kubeval-linux-amd64.tar.gz \
     && tar xf kubeval-linux-amd64.tar.gz \
